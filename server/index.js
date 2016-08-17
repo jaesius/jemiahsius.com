@@ -2,6 +2,7 @@ var express = require('express')
 var config = require('../config')
 var app =  express()
 var bodyParser = require('body-parser')
+var mailer = require("../mailgun")
 
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
@@ -13,8 +14,14 @@ app.get('/', (req, res) => {
 })
 
 app.use('/post', (req, res) => {
-  console.log('req.body', req.body)
-  res.send('thanks')
+  var data = {
+    name: req.body.name,
+    sender: req.body.email,
+    phone: req.body.phone,
+    body: req.body.message
+  }
+  mailer(data);
+  res.render('thanks').redirect('/thanks')
 })
 
 app.set('view engine', 'ejs')
