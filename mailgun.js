@@ -60,7 +60,8 @@ function validateBody(body){
 }
 
 
-function validateSend(data) {
+function validateSend(data, callback) {
+
   if(validateEmail(data.sender) && validatePhone(data.phone) && validateName(data.name) && validateBody(data.body)){
     var messageBody = "Name: " + data.name + "\n";
     messageBody += "Email: " + data.sender + "\n";
@@ -68,11 +69,20 @@ function validateSend(data) {
     messageBody += "Message: " + data.body;
 
     mg.sendText(data.sender,
-             'jaesius@me.com',
-             'Contact Form Submission From JemiahSius.com',
-             messageBody,
-             function(err) { err && console.log(err) });
+      'jaesius@me.com',
+      'Contact Form Submission From JemiahSius.com',
+      messageBody,
+      function(err) {
+        if (err) {
+          callback(err.message)
+        } else {
+          callback(undefined)
+        }
+      }
+    );
 
+  } else {
+    callback('Did not validate: Please try again.')
   }
 
 }
