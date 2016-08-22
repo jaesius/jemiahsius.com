@@ -33,13 +33,7 @@
     <div id="header">
       <div class="container">
         <div class="col-md-6 col-md-offset-6 col-sm-12">
-            <h1 class="heading heading-black main-header">Create<br />Or<br />Die</h1>
-            <% if (messages) { %>
-            <p><% console.log('messages', messages) %></p>
-            <h1><%= messages[0] %></h1>
-            <% } else { %>
-            <h1>Something else</h1>
-            <% } %>
+            <h1 class="heading heading-black main-header">Yayy</h1>
             <p class="welcome-message">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum magna faucibus magna luctus dapibus eget sit amet ipsum. Vivamus semper felis non nisl fringilla ultrices. Phasellus accumsan bibendum diam, dapibus iaculis arcu varius at. Praesent maximus maximus enim, nec aliquam magna auctor vel.
             </p>
@@ -181,8 +175,7 @@
           </div>
           <div class="row">
               <div class="col-lg-12">
-                <a href="" id="contact"></a>
-                  <form name="sentMessage" id="contactForm" method="post" action="" data-parsley-validate>
+                  <form name="sentMessage" id="contactForm" method="post" action="/post" data-parsley-validate>
                       <div class="row">
                           <div class="col-md-6">
                               <div class="form-group">
