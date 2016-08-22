@@ -1,7 +1,2 @@
-page sections:
-  header
-    logo
-    navbar
-    heading
-    subheading
-    CTA
+# jemiahsius.com
+Repo for my personal website
