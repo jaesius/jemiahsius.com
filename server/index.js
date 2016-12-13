@@ -6,6 +6,7 @@ var mailer = require("../mailgun")
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var flash = require('connect-flash')
+var xss = require('xss')
 
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
