@@ -1,5 +1,6 @@
 var Mailgun = require('mailgun').Mailgun;
 var mg = new Mailgun('key-e5b0d70d112144d49d65207ebbb45694');
+var xss = require('xss')
 //var config = require('./config')
 
 

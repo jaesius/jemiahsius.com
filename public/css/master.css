@@ -41,7 +41,7 @@ body{
 }
 
 .navbar-bg{
-  background: #111;
+  background: #000000;
 }
 #header{
   min-height: 700px;
@@ -353,8 +353,7 @@ body{
      color: #e74c3c
  }
  #contact .submit-btn {
-   background-color: limegreen !important;
-   color:white;
+
    font-family: 'Source Sans Pro', sans-serif;
    font-size: 20px;
    font-weight: 300;
@@ -363,13 +362,87 @@ body{
    padding:15px 30px;
  }
  #contact .submit-btn:hover {
-   background-color: green !important;
  }
 
  .no-gutter > [class*='col-'] {
      padding-right:0;
      padding-left:0;
  }
+
+ /************ BTN CSS **************/
+ .btn {
+  border-radius: 4px;
+  background: #000;
+  border: 3px solid #fff;
+  color: #fff;
+  display: inline-block;
+  margin: 0 .25em;
+  overflow: hidden;
+  padding: 24px 60px 24px 16px;
+  position: relative;
+  text-decoration: none;
+  line-height: 1;
+}
+.btn .btn-content {
+  font-size: 1em;
+  line-height: 1.2;
+  padding: 0 50px;
+  position: relative;
+  right: 0;
+  transition: right 300ms ease;
+  display: block;
+  text-align: left;
+}
+.btn .icon {
+  border-left: 3px solid #fff;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50%;
+  transition: all 300ms ease;
+  transform: translateY(-50%);
+  width: 58px;
+  height: 70%;
+}
+.btn .icon i {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: white;
+  background-color: rgb(234, 102, 35);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+.btn:hover .btn-content {
+  right: 100%;
+}
+.btn:hover .icon {
+  border-left: 0;
+  font-size: 1.8em;
+  width: 100%;
+}
+.btn:hover:after {
+  opacity: .7;
+}
+.btn.btn-alt-color {
+  border-color: salmon;
+  color: salmon;
+}
+.btn.btn-alt-color .icon {
+  border-left-color: salmon;
+}
+.btn.btn-alt-color:after {
+  background-color: salmon;
+}
+ /************ BTN CSS **************/
 
  @-webkit-keyframes RevealText {
    from {
