@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel-node": "babel-node",
-    "start": "nodemon --exec npm run babel-node index.js"
+    "start": "nodemon --exec npm run babel-node index.js",
+    "prod": "pm2 start --interpreter babel-node index.js"
   },
   "license": "ISC",
   "babel": {
