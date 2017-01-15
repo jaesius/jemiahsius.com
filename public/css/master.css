@@ -374,7 +374,7 @@ img.header-main {
  .btn {
   border-radius: 4px;
   background: #000;
-  border: 3px solid #fff;
+  border: 1px solid #fff;
   color: #fff;
   display: inline-block;
   margin: 0 .25em;
