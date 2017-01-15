@@ -28,7 +28,7 @@ body{
   border-bottom: black 3px solid;
 }
 .static-nav a{
-  color:white;
+  color:white !important;
   text-transform: uppercase;;
   letter-spacing: 1px;
 }
@@ -45,7 +45,6 @@ body{
 }
 #header{
   min-height: 700px;
-  /*background:#fff url('../img/header-bg.jpg') center center no-repeat;*/
   background-size: cover;
   padding-bottom: 50px;
 }
@@ -278,6 +277,9 @@ img.header-main {
 #contact {
      background:black;
  }
+ .heading.glitch{
+   margin:0 auto;
+ }
  .glitch {
   color: white;
   position: relative;
@@ -368,10 +370,6 @@ img.header-main {
  #contact .submit-btn:hover {
  }
 
- .no-gutter > [class*='col-'] {
-     padding-right:0;
-     padding-left:0;
- }
 
  /************ BTN CSS **************/
  .btn {
