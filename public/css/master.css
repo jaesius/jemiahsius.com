@@ -1,5 +1,5 @@
 body{
-  font-size: 15px;
+  font-size: 17px;
 }
 .navbar-brand {
     color:black;
@@ -255,7 +255,7 @@ img.header-main {
   display: inline-block;
   overflow: hidden;
   position: relative;
-  white-space: no-wrap;
+  white-space: nowrap;
   width: 370px;
 }
 
@@ -417,11 +417,11 @@ img.header-main {
   content: '';
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 0; 
   right: 0;
   left: 0;
-  color: white;
-  background-color: rgb(234, 102, 35);
+  color: black;
+  background-color: rgb(255, 255, 255);
   opacity: 0;
   transition: opacity 300ms ease;
 }
@@ -473,7 +473,7 @@ img.header-main {
   }
     .heading {
      text-align: center;
-     font-size: 5em;
+     font-size: 66px;
      line-height: .9em;
      margin: 0 0 30px;
   }
@@ -481,13 +481,13 @@ img.header-main {
     text-align: justify;
   }
   .animated {
-    width: 260px;
+    width: 210px;
   }
   #about {
     background:#fff;
   }
   .glitch {
-    width: auto;
+    width: 100px;
 }
 }
  @-webkit-keyframes RevealText {
