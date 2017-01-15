@@ -39,7 +39,6 @@ body{
 .static-nav a:first-child:hover{
   border-bottom: none;
 }
-
 .navbar-bg{
   background: #000000;
 }
