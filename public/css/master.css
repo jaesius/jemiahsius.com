@@ -48,7 +48,7 @@ body{
   background-size: cover;
   padding-bottom: 50px;
 }
-#header .heading{
+.main-heading{
   margin-top:150px;
 }
 .heading-black, .subheading-black, .text-black{
