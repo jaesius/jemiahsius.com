@@ -266,7 +266,7 @@ img.header-main {
   font-size: 130px;
   font-weight: bold;
   position: relative;
-  top:-40px;
+  top:-30px;
 }
 #about{
   background: url('../img/jemiah-3d.jpg') right bottom no-repeat;
@@ -412,16 +412,17 @@ img.header-main {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  color:#fff;
 }
 .btn:after {
   content: '';
   position: absolute;
   top: 0;
-  bottom: 0; 
+  bottom: 0;
   right: 0;
   left: 0;
   color: black;
-  background-color: rgb(255, 255, 255);
+  background-color: #000;
   opacity: 0;
   transition: opacity 300ms ease;
 }
@@ -477,9 +478,15 @@ img.header-main {
      line-height: .9em;
      margin: 0 0 30px;
   }
+  .subheading {
+    text-align: center;
+}
   p.welcome-message{
     text-align: justify;
   }
+  .cursor {
+    top: 0px;
+}
   .animated {
     width: 210px;
   }
