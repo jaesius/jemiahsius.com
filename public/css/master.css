@@ -464,6 +464,7 @@ img.header-main {
 @media(max-width: 760px){
   p{
     text-align: justify;
+    font-size: 18px;
   }
   img.header-main {
       position: relative;
