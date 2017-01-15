@@ -45,9 +45,8 @@ body{
 }
 #header{
   min-height: 700px;
-  background:#fff url('../img/header-bg.jpg') center center no-repeat;
+  /*background:#fff url('../img/header-bg.jpg') center center no-repeat;*/
   background-size: cover;
-  padding-top: 8%;
   padding-bottom: 50px;
 }
 .heading-black, .subheading-black, .text-black{
@@ -56,13 +55,17 @@ body{
 .heading-white, .subheading-white, .text-white{
   color: white;
 }
+img.header-main {
+    position: absolute;
+    left: -20px;
+}
  .heading{
   font-family: 'Old Standard TT', serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 130px;
   line-height: 115px;
-  margin: 0 0 30px;
+  margin: 150px 0 30px;
 }
  .subheading{
   font-family: 'Source Sans Pro', sans-serif;
@@ -78,6 +81,7 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   text-align: justify;
 }
+
  #services, #about, #portfolio, #contact{
    padding: 100px 0;
  }
@@ -442,8 +446,49 @@ body{
 .btn.btn-alt-color:after {
   background-color: salmon;
 }
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
  /************ BTN CSS **************/
-
+/********* MOBILE ****************/
+@media(max-width: 760px){
+  p{
+    text-align: justify;
+  }
+  img.header-main {
+      position: relative;
+      left: 0;
+      margin-top: 50px;
+  }
+    .heading {
+     text-align: center;
+     font-size: 5em;
+     line-height: .9em;
+     margin: 0 0 30px;
+  }
+  p.welcome-message{
+    text-align: justify;
+  }
+  .animated {
+    width: 260px;
+  }
+  #about {
+    background:#fff;
+  }
+  .glitch {
+    width: auto;
+}
+}
  @-webkit-keyframes RevealText {
    from {
      width: 0;

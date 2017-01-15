@@ -22,7 +22,7 @@
       <div class="container">
           <a href="#header" class="navbar-brand page-scroll">JEMIAH<span class="sius">SIUS</span></a>
 
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right hidden-xs">
             <li class="active"><a href="/doc/JS-DeveloperResume-2016.pdf">Resume<span class="sr-only">(current)</span></a></li>
             <li><a href="#portfolio" class="page-scroll">Port</a></li>
             <li><a href="#about" class="page-scroll">About</a></li>
@@ -33,18 +33,24 @@
 
     <div id="header">
       <div class="container">
-        <div class="col-md-6 col-md-offset-6 col-sm-12">
-            <h1 class="heading heading-black main-header">Create<br />Or<br />Die</h1>
-            <% if (messages) { %>
-            <p><% console.log('messages', messages) %></p>
-            <h1><%= messages[0] %></h1>
-            <% } else { %>
-            <h1>Something else</h1>
-            <% } %>
-            <p class="welcome-message">
-              Bold statements demand bold actions and a life without creativity isn’t a life for me. I’m Jemiah Sius and welcome to my mind, portfolio, website, and world. I am Programming, Design, and Marketing Professional and these are my efforts at creating great projects, keeping true to the saying that good design matters, & growing myself as an artist and a professional.
-            </p>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 no-gutter">
+            <img class="header-main img-responsive visible-xs-block" src="/img/design-iphone-768.jpg" alt="iPhone showing mobile design by Jemiah Sius" />
+            <img class="header-main img-responsive visible-md-block" src="/img/design-laptop-585.jpg" alt="Laptop showing the graphic and web design work by Jemiah Sius" />
           </div>
+          <div class="col-md-6 col-sm-12">
+              <h1 class="heading heading-black main-header">Create<br />Or<br class="hidden-xs" /> Die</h1>
+              <% if (messages) { %>
+              <p><% console.log('messages', messages) %></p>
+              <p><%= messages[0] %></p>
+              <% } else { %>
+              <p>Something else</p>
+              <% } %>
+              <p class="welcome-message">
+                Bold statements demand bold actions and a life without creativity isn’t a life for me. I’m Jemiah Sius and welcome to my mind, portfolio, website, and world. I am Programming, Design, and Marketing Professional and these are my efforts at creating great projects, keeping true to the saying that good design matters, & growing myself as an artist and a professional.
+              </p>
+            </div>
+        </div>
       </div>
     </div>
 
@@ -151,7 +157,7 @@
       <div class="container">
         <div class="col-md-7">
           <p class="subheading">
-            Somethings are better in plain ole black and white... but things are just too awesome to be flat. I'm thiking I'm the latter one ;)
+            Somethings are better in plain ole black and white... while others are just too awesome to be flat. I'd rather be the latter ;)
           </p>
         </div>
       </div>
@@ -396,8 +402,6 @@
             </div>
         </div>
     </div>
-
-
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -406,6 +410,5 @@
     <script src="/js/navbar-scroll.js" /></script>
     <script src="/js/threed.js" /></script>
     <script src="/js/jemiahsius.js" /></script>
-
   </body>
 </html>
