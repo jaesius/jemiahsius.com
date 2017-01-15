@@ -48,6 +48,9 @@ body{
   background-size: cover;
   padding-bottom: 50px;
 }
+#header-heading{
+  margin-top:150px;
+}
 .heading-black, .subheading-black, .text-black{
   color: black;
 }
@@ -277,9 +280,7 @@ img.header-main {
 #contact {
      background:black;
  }
- .heading.glitch{
-   margin:0 auto;
- }
+
  .glitch {
   color: white;
   position: relative;
