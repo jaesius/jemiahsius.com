@@ -60,6 +60,9 @@ img.header-main {
     position: absolute;
     left: -20px;
 }
+h1.heading.heading-black.main-header {
+    margin-top: 150px;
+}
  .heading{
   font-family: 'Old Standard TT', serif;
   text-transform: uppercase;
@@ -71,15 +74,16 @@ img.header-main {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 30px;
-  font-style: italic;
-  line-height: 30px;
+  line-height: 1.3;
   margin-bottom: 35px;
 }
 
  p.welcome-message{
   color:black;
   font-family: 'Source Sans Pro', sans-serif;
-  text-align: justify;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-top: 20px;
 }
 
  #services, #about, #portfolio, #contact{
@@ -110,7 +114,7 @@ img.header-main {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  background: rgba(234, 102, 35, 0.9);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -142,15 +146,19 @@ img.header-main {
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
-  background-color: white;
+  background-color: none;
   text-align: center;
   padding: 25px;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
-  text-transform: none;
-  margin: 0;
+    text-transform: none;
+    margin: 0;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 25%;
 }
 #portfolio .portfolio-item .portfolio-caption p {
+  color: #999;
   font-family: 'Source Sans Pro', sans-serif;
   font-style: italic;
   font-size: 16px;
@@ -272,8 +280,8 @@ img.header-main {
   background: url('../img/jemiah-3d.jpg') right bottom no-repeat;
   background-size: cover;
 }
-#about h1{
-
+ul {
+    padding: 0 0 0 20px;
 }
 #contact {
      background:black;
@@ -379,7 +387,7 @@ img.header-main {
   display: inline-block;
   margin: 0 .25em;
   overflow: hidden;
-  padding: 24px 60px 24px 16px;
+  padding: 10px 20px 10px 10px;
   position: relative;
   text-decoration: none;
   line-height: 1;
@@ -469,17 +477,17 @@ img.header-main {
       left: 0;
       margin-top: 50px;
   }
-    .heading {
-     text-align: center;
-     font-size: 66px;
-     line-height: .9em;
-     margin: 0 0 30px;
-  }
+  .heading {
+    text-align: center;
+    font-size: 86px;
+    line-height: .9em;
+    margin: 0 0 30px;
+}
   .subheading {
     text-align: center;
 }
   p.welcome-message{
-    text-align: justify;
+    text-align: center;
   }
   .cursor {
     top: 0px;

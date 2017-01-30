@@ -86,9 +86,6 @@
 			}
 		}( typeof global !== "undefined" ? global : this ));
 
-
-
-
 		/* CSS rel=preload polyfill (from src/cssrelpreload.js) */
 		/* CSS rel=preload polyfill. Depends on loadCSS function */
 		(function( w ){
@@ -150,10 +147,6 @@
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Source+Sans+Pro:300,400,900"></noscript>
     <%# <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Source+Sans+Pro:300,400,900" rel="stylesheet">%>
 
-    <style type="text/css">
-    .navbar-brand,.navbar-brand .sius{font-family:'Source Sans Pro',sans-serif;text-shadow:none}.heading,.nav a{text-transform:uppercase}.heading-black,.nav a,.navbar-brand{color:#000}body{font-size:17px}.navbar-brand{font-size:30px;font-weight:300}.navbar-brand .sius{font-weight:900}.nav a{letter-spacing:1px}#header{min-height:700px;background-size:cover;padding-bottom:50px}img.header-main{position:absolute;left:-20px}.main-header{margin-top:150px;}.heading{font-family:'Old Standard TT',serif;font-weight:700;font-size:130px;line-height:115px;}p.welcome-message{color:#000;font-family:'Source Sans Pro',sans-serif;text-align:justify}#portfolio{padding:100px 0;background:#000}#portfolio *{z-index:2}.portfolio-modal .modal-content{border-radius:0;background-clip:border-box;-webkit-box-shadow:none;box-shadow:none;border:none;min-height:100%;padding:100px 0;text-align:center}.portfolio-modal .modal-content h2{margin-bottom:15px;font-size:3em}.portfolio-modal .modal-content p{margin-bottom:30px}.portfolio-modal .modal-content p.item-intro{margin:20px 0 30px;font-family:'Source Sans Pro',sans-serif;font-style:italic;font-size:16px}.portfolio-modal .modal-content ul.list-inline{margin-bottom:30px;margin-top:0}.portfolio-modal .modal-content img{margin-bottom:30px}.portfolio-modal .close-modal{position:absolute;width:75px;height:75px;background-color:transparent;top:25px;right:25px}.portfolio-modal .close-modal .lr{height:75px;width:1px;margin-left:35px;background-color:#222;transform:rotate(45deg);-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg);z-index:1051}.portfolio-modal .close-modal .lr .rl{height:75px;width:1px;background-color:#222;transform:rotate(90deg);-ms-transform:rotate(90deg);-webkit-transform:rotate(90deg);z-index:1052}.btn{border-radius:4px;background:#000;border:1px solid #fff;color:#fff;display:inline-block;margin:0 .25em;overflow:hidden;padding:24px 60px 24px 16px;position:relative;text-decoration:none;line-height:1}.btn:after{content:'';position:absolute;top:0;bottom:0;right:0;left:0;color:#000;background-color:#000;opacity:0}@media (max-width:760px){p{text-align:justify;font-size:18px}img.header-main{position:relative;left:0;margin-top:50px}.heading{text-align:center;font-size:66px;line-height:.9em;margin:0 0 30px}p.welcome-message{text-align:justify}}
-    </style>
-
   </head>
   <body>
     <nav class="navbar navbar-fixed-top">
@@ -177,15 +170,17 @@
             <img class="header-main img-responsive hidden-xs" src="/img/design-laptop-585.jpg" alt="Laptop showing the graphic and web design work by Jemiah Sius" />
           </div>
           <div class="col-md-6 col-xs-12">
-              <h1 class="heading heading-black main-header">Create<br />Or<br class="hidden-xs" /> Die</h1>
+              <h1 class="heading heading-black main-header hidden-xs">Create<br />Or Die</h1>
               <% if (messages) { %>
               <p><% console.log('messages', messages) %></p>
               <p><%= messages[0] %></p>
               <% } else { %>
               <p>Something else</p>
               <% } %>
+              <%# <h2>Web Designer/Developer and Marketing Manager</h2>%>
               <p class="welcome-message">
-                Bold statements demand bold actions and a life without creativity isn’t a life for me. I’m Jemiah Sius and welcome to my mind, portfolio, website, and world. I am Programming, Design, and Marketing Professional and these are my efforts at creating great projects, keeping true to the saying that good design matters, & growing myself as an artist and a professional.
+                <strong>Web Designer | Front-End Developer</strong><br /><br />
+                I’m Jemiah Sius and I create to solve problems and build relationships using tech and design.
               </p>
             </div>
         </div>
@@ -208,11 +203,11 @@
                   <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                       <div class="portfolio-hover">
                         <div class="portfolio-caption">
-                          <h4>Round Icons</h4>
-                          <p class="text-muted">Graphic Design</p>
+                          <h4>Millions Clothing</h4>
+                          <p class="text-muted">Web Design, Branding, Ecommerce</p>
                         </div>
                       </div>
-                      <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                      <img src="img/portfolio/millions.jpg" class="img-responsive" alt="Wed Design, Branding, &amp; Ecommerce project for Millions Clothing">
                   </a>
 
               </div>
@@ -220,11 +215,11 @@
                   <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                       <div class="portfolio-hover">
                         <div class="portfolio-caption">
-                              <h4>Startup Framework</h4>
+                              <h4>GoldPlay</h4>
                               <p class="text-muted">Website Design</p>
                           </div>
                       </div>
-                      <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                      <img src="img/portfolio/goldplay.jpg" class="img-responsive" alt="Web Design project for GoldPlay app">
                   </a>
 
               </div>
@@ -232,11 +227,11 @@
                   <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                       <div class="portfolio-hover">
                           <div class="portfolio-caption">
-                              <h4>Treehouse</h4>
+                              <h4>Kirk Jewelers</h4>
                               <p class="text-muted">Website Design</p>
                           </div>
                       </div>
-                      <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                      <img src="img/portfolio/kirk-jewelers.jpg" class="img-responsive" alt="Web Design project for Kirk Jewelers">
                   </a>
 
               </div>
@@ -244,11 +239,11 @@
                   <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                       <div class="portfolio-hover">
                           <div class="portfolio-caption">
-                              <h4>Golden</h4>
-                              <p class="text-muted">Website Design</p>
+                              <h4>Make The Homeless Smile</h4>
+                              <p class="text-muted">Website Design, Branding, Photography</p>
                           </div>
                       </div>
-                      <img src="img/portfolio/golden.png" class="img-responsive" alt="">
+                      <img src="img/portfolio/mths.jpg" class="img-responsive" alt="Web Design project for Make the homeless smile">
                   </a>
 
               </div>
@@ -256,11 +251,11 @@
                   <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                       <div class="portfolio-hover">
                           <div class="portfolio-caption">
-                              <h4>Escape</h4>
+                              <h4>Malin Haley DiMaggio &amp; Bowen</h4>
                               <p class="text-muted">Website Design</p>
                           </div>
                       </div>
-                      <img src="img/portfolio/escape.png" class="img-responsive" alt="">
+                      <img src="img/portfolio/mhdb.jpg" class="img-responsive" alt="Web Design project for MHDB">
                   </a>
 
               </div>
@@ -268,11 +263,11 @@
                   <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                       <div class="portfolio-hover">
                           <div class="portfolio-caption">
-                              <h4>Dreams</h4>
+                              <h4>Goldstein Environmental Law Firm</h4>
                               <p class="text-muted">Website Design</p>
                           </div>
                       </div>
-                      <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                      <img src="img/portfolio/goldstein.jpg" class="img-responsive" alt="Web Design project for Goldstein Environmental Law">
                   </a>
 
               </div>
@@ -280,9 +275,9 @@
           <div class="row">
             <div class="col-md-12">
               <p class="subheading text-center more-link">
-              More Photography. More Websites. More Madness.<br />
-              <br  / />
-              <a href="https://www.behance.net/jemiahsius" class="btn">
+              View more websites, logos, photography, <br />and other portfolio items on behance<br />
+              <br />
+              <a href="https://www.behance.net/jemiahsius" class="btn" target="_blank">
             		<span class="btn-content">View Behance Portfolio</span>
             		<span class="icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
             	</a>
@@ -296,29 +291,36 @@
 
 
     <div id="about">
-      <div class="container"><h1 class="heading heading-black three-d">About</h1></div>
+      <div class="container"><h1 class="heading heading-black three-d">...</h1></div>
       <div class="container">
         <div class="col-md-7">
           <p class="subheading">
-            Somethings are better in plain ole black and white... while others are just too awesome to be flat. I'd rather be the latter ;)
+          <strong>Jemiah Sius</strong><br /> Web Designer | Front-End Developer
           </p>
         </div>
       </div>
       <div class="container">
         <div class="col-xs-12 col-md-3">
-          <p>Without any fluff, I am a Miami native that loves to create and the creative process.</p>
+          <p>
+            I am a skilled Web Designer and Front-End Developer with years of experience is taking developing projects from ideation to commercialization. I'm a logical thinker that enjoys an opportunity for growth as a developer and designer.
+          </p>
 
-          <p>I started designing at an early age drawing on walls, papers, homework, classwork and everything else that wasn’t meant to be drawn on. Since then art, design, and aesthetics have always been a part of everyday life leading through elementary, junior, and senior high school.</p>
-
-          <p>Discovering my love for design made the choice of focusing on a degree in commercial art and easy choice for me and I attended	The Art Institute of Fort Lauderdale in their Media Arts degree program. While pursuing my Bachelor’s degree as a  student of AIFL my illustration skills were honed and accompanied by a new Graphic and Web Design skill set. As student I freelance for various clothing branding designing apparel and developing branding, the North Miami Mayor's office developing websites, and for Miami Dade Solid Waste on their Keep America Beautiful Campaign.</p>
+          <p>For the last 7+ years, I have created websites, developed and implemented marketing strategy, and grown companies at an agency level. While constantly trying to push my creative limits and continuing my education as a web programmer and recently completing the Harvard CS50 course at Miami Dade College.</p>
         </div>
 
-        <div class="col-xs-12 col-md-3">
-          <p>By the time I completed my degree I was well into learning about the web and wanted a deeper understanding how the Internet was changing how companies and consumers interacted. I attended Full Sail University obtaining my Master’s Degree in Internet Marketing.</p>
-
-          <p>For the last 7+ years I have created websites, developed and implemented marketing strategy, and grown companies at an agency level. While constantly trying to push my creative limits and continuing my education as a web programmer and recently completing the Harvard CS50 course at Miami Dade College.</p>
-
-          <p>Outside of design I regularly volunteer helping various organizations try to make positive changes throughout communities in South Florida.</p>
+        <div class="col-xs-12 col-md-3 col-md-offset-1">
+          <p><strong>Skills</strong></p>
+          <ul>
+            <li>UI Prototyping</li>
+            <li>Concept Creation</li>
+            <li>Frontend Development</li>
+            <li>Responsive Web Design</li>
+            <li>Web Programming</li>
+            <li>Graphic Design</li>
+            <li>Photography</li>
+            <li>Search Engine Marketing</li>
+            <li>Social Media Strategy</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -329,8 +331,8 @@
       <div class="container">
           <div class="row">
               <div class="col-lg-12 text-center">
-                  <h2 class="heading glitch" data-text="CONTACT">Contact</h2>
-                  <p class="subheading text-white">Let's Work, Collaborate, Create, or just say hello.</p>
+                  <h2 class="heading glitch" data-text="Say Hello.">Say Hello.</h2>
+                  <p class="subheading text-white">Let's Work Together.</p>
               </div>
           </div>
           <div class="row">
@@ -391,17 +393,27 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <h2>Millions Clothing</h2>
+                            <p class="item-intro text-muted">Web Design, Branding, Ecommerce</p>
                             <p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                            <strong>The Project:</strong> Create a ecommerce website to replace the separate solutions being used promote branda awareness and sell merchandise online.
+                            </p>
+                            <p><strong>The Solution:</strong> I designed and developed a sleek responsive website for Millions Clothing. Using a simple navigation and user experience allowed users to access any page on the site with no more than two clicks increased usability and sales percentages. For ease of use, the website is managed using the Wordpress CMS for content, products, and order fulfillment. </p>
+                            <p>
+                            <strong>Technology: HTML, CSS, PHP, JavaScript, Adobe Photoshop, Adobe Illustrator, &amp; Wordpress</strong>
+                            </p>
+                            <%# <ul class="list-inline">
+                                <li>Behance</li>
+                                <li>Dribble</li>
+                            </ul>%>
                             <ul class="list-inline">
-                                <li>Date: July 2014</li>
-                                <li>Client: Round Icons</li>
-                                <li>Category: Graphic Design</li>
+                                <li>Date: July 2015</li>
+                                <li>Client: Millions Clothing</li>
+                                <li>Category: Web Design</li>
                             </ul>
+                            <img class="img-responsive img-centered" src="img/portfolio/millions-web-design-header.jpg" alt="Image of web site designed for Millions Clothing" />
+                            <img class="img-responsive img-centered" src="img/portfolio/millions-website-design.jpg" alt="Image of web site designed for Millions Clothing" />
+
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -423,11 +435,17 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Heading</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                            <h2>GoldPlay</h2>
+                            <p class="item-intro text-muted">Website Design</p>
+                            <p>
+                            <strong>The Project:</strong> Goldplay Music needed a landing page focused on showing new feature coming to their iPhone app before it's update in the app store. They wanted a very modern design with an interactive interface to peak the interest of their younger target audience.
+                            </p>
+                            <p><strong>The Solution:</strong> I designed and developed a responsive minimalistic landing page with bold imagery and animated GIFs displaying updated features of their upcoming release. The interactive user interface allows users to take action on the page and see various features displayed on the screen.</p>
+                            <p>
+                            <strong>Technology: HTML, CSS, JavaScript, Bootstrap, &amp; Adobe Photoshop</strong>
+                            </p>
+                            <img class="img-responsive img-centered" src="img/portfolio/goldplay-desktop-web-design.jpg" alt="Image showing the desktop version of a website designed for Gold Play" />
+                            <img class="img-responsive img-centered" src="img/portfolio/goldplay-mobile-web-design.jpg" alt="Image showing the mobile version of a website designed for Gold Play" />
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -450,11 +468,17 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <h2>Kirk Jewelers</h2>
+                            <p class="item-intro text-muted">Web Design</p>
+                            <p>
+                            <strong>The Project:</strong> Kirk Jewelers wanted to redesign their current website focused on displaying the Miami jewelry store as the best choice for consumers in the market for luxury timepieces and jewelry. The website needed to have lots of imagery, include a blog, tell the Kirk Jewelers story, and integrate with their e-commerce platform.
+                            </p>
+                            <p><strong>The Solution:</strong> I designed a responsive website covering all the brands needs using impactful imagery and content sections to stylishly tell their brand story and display the tops brands of jewelry brands offered at their store in downtown Miami.</p>
+                            <p>
+                            <strong>Technology: HTML, CSS, JavaScript, Bootstrap, Wordpress, &amp; Adobe Photoshop</strong>
+                            </p>
+                            <img class="img-responsive img-centered" src="img/portfolio/kirk-website-homepage.jpg" alt="Image showing the desktop and mobile homepage of a website designed for Kirk Jewelers" />
+                            <img class="img-responsive img-centered" src="img/portfolio/kirk-website-pages.jpg" alt="Image showing the pages of the website designed for Kirk Jewelers" />
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -477,11 +501,18 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                            <h2>Make The Homeless Smile</h2>
+                            <p class="item-intro text-muted">Web Design, Branding, Photography</p>
+                            <p>
+                            <strong>The Project:</strong> Make The Homeless Smile needed a website providing information about the non-profit organization and their mission of providing help and smiles to Miami's urban core.
+
+                            </p>
+                            <p><strong>The Solution:</strong> I designed a responsive website focused on telling the brand's story and display the volunteers that come out on monthly basis.</p>
+                            <p>
+                            <strong>Technology: HTML, CSS, JavaScript, Bootstrap, Wordpress, Photography, &amp; Adobe Photoshop</strong>
+                            </p>
+                            <img class="img-responsive img-centered" src="img/portfolio/mths-website-design.jpg" alt="Image showing the desktop version of a website designed for Make The Homeless Smile" />
+                            <img class="img-responsive img-centered" src="img/portfolio/mths-website-pages.jpg" alt="Pages created in the MTHS website design" />
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -504,11 +535,16 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                            <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <h2>Malin Haley DiMaggio &amp; Bowen</h2>
+                            <p class="item-intro text-muted">Web Design</p>
+                            <p>
+                            <strong>The Project:</strong> Design a website that provides information about the law firm Malin Haley DiMaggio &amp; Bowen. They wanted to create unique slider images for each focus of the law firm and to incorporate a blog and sidebar that provided information on their latest patents.
+                            </p>
+                            <p><strong>The Solution:</strong> I designed a responsive website that's easy to navigate and find any needed information about the law firm and their services.</p>
+                            <p>
+                            <strong>Technology: HTML, CSS, Wordpress, Photography, &amp; Adobe Photoshop</strong>
+                            </p>
+                            <img class="img-responsive img-centered" src="img/portfolio/mhdb-homepage.gif" alt="Image showing the desktop version of a website designed for MHDB" />
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -531,11 +567,16 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                            <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                            <h2>Goldstein Environmental Law</h2>
+                            <p class="item-intro text-muted">Web Design</p>
+                            <p>
+                            <strong>The Project:</strong> Goldstein Environmental Law Firm needed a website to provide users with information about the law firm and the services they provide.
+                            </p>
+                            <p><strong>The Solution:</strong> I designed a website that's easy to navigate and find any needed information about Goldstein Environmental Law</p>
+                            <p>
+                            <strong>Technology: HTML, CSS, Wordpress, &amp; Adobe Photoshop</strong>
+                            </p>
+                            <img class="img-responsive img-centered" src="img/portfolio/goldstein-homepage.jpg" alt="Image showing the desktop version of a website designed for Goldstein Environmental Law" />
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -544,13 +585,13 @@
         </div>
     </div>
     <!-- Latest compiled and minified JavaScript -->
-    <script async src="https://code.jquery.com/jquery-2.2.4.min.js"
+    <script defer src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.compatibility.min.js"></script>
-    <script async src="/js/parsley.min.js"></script>
-    <script async src="/js/navbar-scroll.js" /></script>
-    <script async src="/js/threed.js" /></script>
-    <script async src="/js/jemiahsius.js" /></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.compatibility.min.js"></script>
+    <script defer src="/js/parsley.min.js"></script>
+    <script defer src="/js/navbar-scroll.js" /></script>
+    <script defer src="/js/threed.js" /></script>
+    <script defer src="/js/jemiahsius.js" /></script>
   </body>
 </html>
