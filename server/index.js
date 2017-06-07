@@ -1,6 +1,7 @@
 var express = require('express')
 var config = require('../config')
 var app =  express()
+require('dotenv').config()
 var bodyParser = require('body-parser')
 var mailer = require("../mailgun")
 var session = require('express-session');
