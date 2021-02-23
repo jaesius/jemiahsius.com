@@ -1,3 +1,4 @@
+require('newrelic');
 // var mongoose = require('mongoose')
 var config = require('./config')
 var server = require('./server')
